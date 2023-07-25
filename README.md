@@ -24,5 +24,7 @@ wget "https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/resolve/main/${MODEL
 That's it, now we are ready to test the model out! 🚀
 
 ```bash
-
+./ggml_metal.sh llama-2-13b-chat.ggmlv3.q4_0.bin system_prompts/good_chatbot.txt Hey!
 ```
+
+The above command will instantiate a session to chat with llama. It'll initialise with the system prompt provided by you. You can look at the system prompt in the `system_prompts` folder. Feel free to tweak it!
